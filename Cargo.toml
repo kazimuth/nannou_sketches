@@ -1,0 +1,21 @@
+[package]
+authors = ["James Gilles <jameshgilles@gmail.com>"]
+edition = "2018"
+name = "nannou_sketches"
+version = "0.1.0"
+publish = false
+
+[dependencies]
+nannou = "0.15.0"
+rand_xorshift = "0.2.0"
+rand_core = "0.5.1"
+rand = "0.7.3"
+petgraph = "0.5.1"
+
+[profile]
+[profile.dev]
+debug = false
+
+[profile.dev.package]
+[profile.dev.package."*"]
+opt-level = 3
